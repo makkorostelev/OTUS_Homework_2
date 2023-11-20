@@ -3,12 +3,13 @@
 Project creates high availability gfs2 with clvm storage.\
 It creates 3 cluster initiator node and 1 target.\
 To work with the project you need to write your data into variables.tf.\
+![Variables](https://github.com/makkorostelev/OTUS_Homework_2/blob/main/Screenshots/variables.png)
 Then enter the commands:
-'terraform init'
-'terraform apply'
+`terraform init`
+`terraform apply`
 
 After ~5 minutes pacemaker cluster will be initialized and run:\
-Below there is an example of successful set up:\
+Below there is an example of successful set up:
 
 ```
 Outputs:
@@ -23,9 +24,9 @@ storage_ip = "51.250.43.99"
 
 Than you can login at any cluster node with the command:\
 `ssh centos@ip_addr`\
-Where `ip_addr` - is any cluster IP.\
+Where `ip_addr` - is any cluster IP.
 
-To check if cluster is running:\
+To check if cluster is running:
 
 ```
 [centos@node-1 ~]$ sudo pcs status
@@ -55,7 +56,7 @@ Daemon Status:
   pcsd: active/enabled
 ```
 
-You can also verify that the file system was successfully mounted:\
+You can also verify that the file system was successfully mounted:
 
 ```
 [centos@node-1 ~]$ df -h
