@@ -3,7 +3,7 @@
 Project creates high availability gfs2 with clvm storage.\
 It creates 3 cluster initiator node and 1 target.\
 To work with the project you need to write your data into variables.tf.\
-![Variables](https://github.com/makkorostelev/OTUS_Homework_2/blob/main/Screenshots/variables.png)
+![Variables](https://github.com/makkorostelev/OTUS_Homework_2/blob/main/Screenshots/variables.png)\
 Then enter the commands:
 `terraform init`
 `terraform apply`
